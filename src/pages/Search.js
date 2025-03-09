@@ -18,7 +18,7 @@ const Search = () => {
     setLoading(true);
     setError(null);
 
-    fetch(`https://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`)
+    fetch(`/api/?s=Avengers&apikey=${API_KEY}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.Response === "True") {
