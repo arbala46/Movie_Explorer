@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const API_KEY = "8cea9bd2"; // OMDb API Key
+const API_KEY = process.env.REACT_APP_OMDB_API_KEY;  // OMDb API Key
 
 const MovieDetail = () => {
   const { id } = useParams(); // Get the movie ID from URL

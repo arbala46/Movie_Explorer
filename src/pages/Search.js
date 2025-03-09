@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_KEY = "8cea9bd2"; // Replace with your OMDb API key
+const API_KEY = process.env.REACT_APP_OMDB_API_KEY;  // Replace with your OMDb API key
 
 const Search = () => {
   const [query, setQuery] = useState("");
